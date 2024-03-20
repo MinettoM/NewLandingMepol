@@ -1,4 +1,6 @@
-/******* Bootstrap Theming ********/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 $primary: #FFD333;
 $secondary: #F5F5F5;

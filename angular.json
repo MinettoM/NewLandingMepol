@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "4e758810-f4fd-4e3a-a26b-0ff49bb0ed05"
+    "analytics": "f960e972-b946-4f9d-915c-d21646a50224"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "NewLanding": {
+    "angular-product-config": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/NewLanding",
+            "outputPath": "dist/angular-product-config",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "NewLanding:build:production"
+              "browserTarget": "angular-product-config:build:production"
             },
             "development": {
-              "browserTarget": "NewLanding:build:development"
+              "browserTarget": "angular-product-config:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "NewLanding:build"
+            "browserTarget": "angular-product-config:build"
           }
         },
         "test": {
@@ -109,6 +109,5 @@
         }
       }
     }
-  },
-  "defaultProject": "NewLanding"
+  }
 }
