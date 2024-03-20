@@ -18,14 +18,14 @@ export class ProductPreviewComponent implements OnInit {
 
   #color = '';
 
-  cupMaterial: MeshStandardMaterial | undefined;
+  freidoraMaterial: MeshStandardMaterial | undefined;
 
   constructor(private gltfLoaderService: NgtGLTFLoaderService) {}
 
-  cup$ = this.gltfLoaderService.load('assets/cup.glb');
+  freidora$ = this.gltfLoaderService.load('assets/cup.glb');
 
-  cupLoaded(object: Object3D) {
-    this.cupMaterial = <MeshStandardMaterial>(<Mesh>object.getObjectByName('Object_2')).material;
+  freidoraLoaded(object: Object3D) {
+    this.freidoraMaterial = <MeshStandardMaterial>(<Mesh>object.getObjectByName('Object_2')).material;
     this.applyColorToMaterial(this.#color);
   }
 
@@ -35,17 +35,17 @@ export class ProductPreviewComponent implements OnInit {
 
   controlsReady(controls: NgtSobaOrbitControls) {
     const orbitControls = controls.controls;
-    orbitControls.enableZoom = false;
+    orbitControls.enableZoom = true;
     orbitControls.autoRotate = true;
-    orbitControls.autoRotateSpeed = 2;
+    orbitControls.autoRotateSpeed = 4;
     const camera = orbitControls.object as PerspectiveCamera;
-    camera.zoom = 4.5;
+    camera.zoom = 5;
     camera.position.setY(2);
   }
 
   applyColorToMaterial(color: string) {
-    if (this.cupMaterial) {
-      this.cupMaterial.color.setHex(parseInt(color.substring(1), 16));
+    if (this.freidoraMaterial) {
+      this.freidoraMaterial.color.setHex(parseInt(color.substring(1), 16));
     }
   }
 
