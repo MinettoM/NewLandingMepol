@@ -1,96 +1,201 @@
+<!-- HEADER -->
+
 <app-header></app-header>
 
-<!-- Navbar -->
-<div class="container-fluid-2 bg-dark mb-30" style="box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);">
-    <div class="orange-rectangle"></div>
-    <div class="row px-xl-5">
-      <div class="d-none d-lg-block" style="width: 20%;">
-        <div class="dropdown" style="margin-left: 10%; margin-right: -50px;">
-          <button class="btn menu w-100 border-0" style="height: 50px;" type="button" (click)="toggleMenu()">
-            <h5 class="text-white m-0 d-flex align-items-center">
-              <i class="fa fa-bars" style="font-size: 28px; margin-left: 2%; margin-right: 5%;"></i>
-              <strong>Todas las categorías</strong>
-            </h5>
-          </button>
-          <div class="dropdown-menu custom-dropdown" [ngClass]="{ 'show': isMenuVisible, 'fade-in': isMenuVisible }">
-            <a class="dropdown-item" href="#" *ngFor="let opcion of opciones">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <i class="fa {{ opcion.icono }} mr-1" style="margin-left: 20px; margin-right: 20px;"></i>
-                  {{ opcion.nombre }}
-                </div>
-                <div class="ml-auto">
-                  <i class="fa fa-arrow-right" style="margin-right: 20px;"></i>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- CARRUSEL -->
 
-<!-- Carousel -->
 <div class="container-fluid">
   <div class="row px-xl-5">
-      <div >
+      <div style = "margin-top: 25px;">
         <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0" data-ride="carousel">
             <ol class="carousel-indicators">
             <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#header-carousel" data-slide-to="1"></li>
             <li data-target="#header-carousel" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
-            <div class="carousel-item position-relative active" style="height: 500px;">
-                <img class="position-absolute w-100 h-100" src="assets/img/eva13.png" style="object-fit: cover;">
-                
+            <div class="carousel-inner" style = "width: 90%; height: 90%; margin-left: auto!important; margin-right: auto!important;">
+              <div class="carousel-item position-relative active" style="height: 450px;">
+                  <img class="position-absolute w-100 h-100" src="assets/img/fondo1.png" style="object-fit: cover;">
+                  
+              </div>
+              <div class="carousel-item position-relative" style="height: 450px;">
+                  <img class="position-absolute w-100 h-100" src="assets/img/fondo1.png" style="object-fit: cover;">
+                  
+              </div>
+              <div class="carousel-item position-relative" style="height: 450px;">
+                  <img class="position-absolute w-100 h-100" src="assets/img/fondo1.png" style="object-fit: cover;">
+                  <!--<div class="carousel-caption d-flex flex-column align-items-center justify-content-center"></div>-->
+              </div>
             </div>
-            <div class="carousel-item position-relative" style="height: 500px;">
-                <img class="position-absolute w-100 h-100" src="assets/img/captura.png" style="object-fit: cover;">
-                
-            </div>
-            <div class="carousel-item position-relative" style="height: 500px;">
-                <img class="position-absolute w-100 h-100" src="assets/img/evangelion.png" style="object-fit: cover;">
-                <!--<div class="carousel-caption d-flex flex-column align-items-center justify-content-center"></div>-->
-            </div>
-            </div>
-            <!-- Flecha izquierda -->
-            <a class="carousel-control-prev" href="#header-carousel" role="button" data-slide="prev">
+            <!-- FLECHA IZQUIERDA -->
+          <a class="carousel-control-prev" href="#header-carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
-            </a>
-            <!-- Flecha derecha -->
-            <a class="carousel-control-next" href="#header-carousel" role="button" data-slide="next">
+          </a>
+          <!-- FLECHA DERECHA -->
+          <a class="carousel-control-next" href="#header-carousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-            </a>
+          </a>  
         </div>
-      <div style = "margin-top: 50px;">
-          <div class="product-offer mb-30" style="height: 200px;">
-              <img class="img-fluid" src="img/offer-1.jpg" alt="">
-              <div class="offer-text">
-                  <h6 class="text-white text-uppercase">Save 20%</h6>
-                  <h3 class="text-white mb-3">Special Offer</h3>
-                  <a href="" class="btn btn-primary">Shop Now</a>
-              </div>
+                  
+      </div>
+
+      <!-- 4 CARTELES -->
+
+      <div class="container">
+        <div class="card-container" style = "margin-top: -80px;">
+          <div class="card">
+            <img src="assets/img/producto1.png" alt="Producto 1" class="product-image">
+            <div class="button-container">
+              <button class="button">Producto 1</button>
+            </div>
           </div>
-          <div class="product-offer mb-30" style="height: 200px;">
-              <img class="img-fluid" src="img/offer-2.jpg" alt="">
-              <div class="offer-text">
-                  <h6 class="text-white text-uppercase">Save 20%</h6>
-                  <h3 class="text-white mb-3">Special Offer</h3>
-                  <a href="" class="btn btn-primary">Shop Now</a>
+          <div class="card">
+            <img src="assets/img/producto1.png" alt="Producto 2" class="product-image">
+            <div class="button-container">
+              <button class="button">Producto 2</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/img/producto1.png" alt="Producto 3" class="product-image">
+            <div class="button-container">
+              <button class="button">Producto 3</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/img/producto1.png" alt="Producto 4" class="product-image">
+            <div class="button-container">
+              <button class="button">Producto 4</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUADRO 5x3 -->
+
+      <h1 class = "titulo" style = "text-align: center;">Categorías</h1>
+      <div>
+        <div class="container" style = "margin-top: -100px;">
+          <div class="card-container-rounded">
+            <div class="card-rounded">
+              <img src="assets/img/producto1.png" alt="Producto 1" class="product-image">
+                  <div class="product-name">Producto 1</div>
+            </div>
+            <div class="card-rounded">
+              <img src="assets/img/producto1.png" alt="Producto 2" class="product-image">
+                  <div class="product-name">Producto 2</div>
+            </div>
+            <div class="card-rounded">
+              <img src="assets/img/producto1.png" alt="Producto 3" class="product-image">
+                  <div class="product-name">Producto 3</div>
+            </div>
+            <div class="card-rounded">
+              <img src="assets/img/producto1.png" alt="Producto 4" class="product-image">
+                <div class="product-name">Producto 4</div>
+            </div>
+            <div class="card-rounded">
+              <img src="assets/img/producto1.png" alt="Producto 5" class="product-image">
+                <div class="product-name">Producto 5</div>
+            </div>
+          </div>
+        </div>
+        <div class="container" style = "height: 100px!important;">
+          <div class="card-container-rounded">
+            <div class="card-rounded">
+              <img src="assets/img/producto1.png" alt="Producto 1" class="product-image">
+                  <div class="product-name">Producto 1</div>
+            </div>
+            <div class="card-rounded">
+              <img src="assets/img/producto1.png" alt="Producto 2" class="product-image">
+                  <div class="product-name">Producto 2</div>
+            </div>
+            <div class="card-rounded">
+              <img src="assets/img/producto1.png" alt="Producto 3" class="product-image">
+                  <div class="product-name">Producto 3</div>
+            </div>
+            <div class="card-rounded">
+              <img src="assets/img/producto1.png" alt="Producto 4" class="product-image">
+                <div class="product-name">Producto 4</div>
+            </div>
+            <div class="card-rounded">
+              <img src="assets/img/producto1.png" alt="Producto 5" class="product-image">
+                <div class="product-name">Producto 5</div>
+            </div>
+          </div>
+        </div>
+        <div class = "container">
+          <div class="card-container-rounded">
+              <div class="card-rounded">
+                <img src="assets/img/producto1.png" alt="Producto 1" class="product-image">
+                    <div class="product-name">Producto 1</div>
               </div>
+              <div class="card-rounded">
+                <img src="assets/img/producto1.png" alt="Producto 2" class="product-image">
+                    <div class="product-name">Producto 2</div>
+              </div>
+              <div class="card-rounded">
+                <img src="assets/img/producto1.png" alt="Producto 3" class="product-image">
+                    <div class="product-name">Producto 3</div>
+              </div>
+              <div class="card-rounded">
+                <img src="assets/img/producto1.png" alt="Producto 4" class="product-image">
+                  <div class="product-name">Producto 4</div>
+              </div>
+              <div class="card-rounded">
+                <img src="assets/img/producto1.png" alt="Producto 5" class="product-image">
+                  <div class="product-name">Producto 5</div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- MÁS VENDIDOS -->
+
+      <h1 class = "titulo">Productos más vendidos</h1>
+      <div class="container">
+        <div class="card-container" style = "gap: 5vw!important;">
+          <div class="card">
+            <img src="assets/img/producto1.png" alt="Producto 1" class="product-image">
+            <div class="button-container" style = "margin-bottom: -40px;">
+              <button class="button">Producto 1</button>
+              <p class="dinero">S/ XXXX.XX</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/img/producto1.png" alt="Producto 2" class="product-image">
+            <div class="button-container" style = "margin-bottom: -40px;">
+              <button class="button">Producto 2</button>
+              <p class="dinero">S/ XXXX.XX</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/img/producto1.png" alt="Producto 3" class="product-image">
+            <div class="button-container" style = "margin-bottom: -40px;">
+              <button class="button">Producto 3</button>
+              <p class="dinero">S/ XXXX.XX</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/img/producto1.png" alt="Producto 4" class="product-image">
+            <div class="button-container" style = "margin-bottom: -40px;">
+              <button class="button">Producto 4</button>
+              <p class="dinero">S/ XXXX.XX</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 </div>
-<!-- Carousel -->
 
+<!-- 3D MODEL -->
+
+<!--
   <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl" style = "width: 93.5%; margin-left: auto;margin-right: auto;">
     <app-product-preview class="w-[100%] h-[420px]" [color]="selectedColor"></app-product-preview>
-  </div>
+  </div>-->
+
+<!-- FOOTER -->
 
 <app-footer></app-footer>
 

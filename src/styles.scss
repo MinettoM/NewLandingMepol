@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-$primary: #FFD333;
+$primary: rgba(241, 147, 35, 1);
 $secondary: #F5F5F5;
+$background: #ffffff;
 $light: #FFFFFF;
-$dark: #3D464D;
+$dark: rgba(6, 65, 115, 1);
 
 $font-family-sans-serif: 'Roboto', sans-serif;
 
-$body-bg: $secondary;
+$body-bg: $background;
 
 $body-color: #6c707d;
 

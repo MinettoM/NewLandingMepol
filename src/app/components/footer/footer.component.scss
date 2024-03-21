@@ -1,3 +1,6 @@
+$azul: rgba(10, 82, 144, 1)!important;
+$naranja: rgba(241, 147, 35, 1)!important;
+
 .header1{
     text-align: right;
     height: 35px;
@@ -10,6 +13,12 @@
     margin-bottom: auto;
     margin-right: 45px;
     color: rgb(28, 45, 121);
+}
+
+.logo{
+    height: 25%;
+    margin-bottom: 30px;
+    margin-top: -20px;
 }
 
 .icons{
@@ -26,4 +35,28 @@
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 6px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button {
+    border: none;
+    width: 70%;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 7px; 
+    cursor: pointer;
+}
+
+.button.centro-de-ayuda {
+    background-color: $naranja; 
+    border: 2px solid $naranja;
+    color: white;
+}
+
+.button.rastrea-mi-pedido {
+    border: 3px solid white;
+    color: white;
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -26,12 +26,20 @@ export class HeaderComponent {
     { nombre: 'Procesadores de Alimentos', icono: 'fa-blender' }
   ];
 
+  
   toggleMenu() {
     const menu = document.querySelector('.menu');
     if (menu) {
-      menu.classList.toggle('clicked');
+      this.isMenuVisible = !this.isMenuVisible;
     }
-    this.isMenuVisible = !this.isMenuVisible;
   }
+  
+  @HostListener('document:click', ['$event'])
+    onDocumentClick(event: MouseEvent) {
+      const target = event.target as HTMLElement;
+      if (target && !target.closest('.dropdown')) {
+        this.isMenuVisible = false;
+      }
+    }
 
 }
