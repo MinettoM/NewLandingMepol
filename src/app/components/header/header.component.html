@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row bg-secondary py-1 px-xl-5">
+  <div class="row bg-secondary px-xl-5">
       <!--<div class="col-lg-6 d-none d-lg-block">
           <div class="d-inline-flex align-items-center h-100">
               <a class="text-body mr-3" href="">About</a>
@@ -7,7 +7,7 @@
       </div>-->
       <div class="header1">
         <div class="d-inline-flex">
-          <i class="fas fa-info-circle fa-x icons" style = "margin-top: auto; margin-bottom: auto;"></i>
+          <i class="fas fa-info-circle fa-x icons"style = "margin-top: auto; margin-bottom: auto;"></i>
           <p class="h-text" style = "margin-left: 20px;">ZONA DOCUMENTOS</p>
           <p class="h-text">SERVICIOS</p>
           <p class="h-text">CATÁLOGOS</p>
@@ -15,8 +15,10 @@
       </div>
   </div>
   <div class="row align-items-center bg-light d-none d-lg-flex" style = "gap: 0.35vw; height: 6vw;">
-    <div class="col-lg-2">
+    <div class="col-lg-2 volver">
+      <a href="">
       <img src="assets/img/logo.png" alt="Logo" style = "height: 80%; width: 80%; margin-left: 1vw;">
+      </a>
     </div>
       <div class="col-lg-4 col-6 text-left">
         <form action="">
@@ -60,7 +62,7 @@
           <a class="dropdown-item" href="#" *ngFor="let opcion of opciones">
             <div class="d-flex justify-content-between align-items-center">
               <div style = "font-size: 0.9vw;">
-                <i class="fa {{ opcion.icono }} mr-1" style = "margin-left: 0.5vw;"></i>
+                <i class="fa {{ opcion.icono }} mr-1" style = "margin-left: 0.1vw;"></i>
                 {{ opcion.nombre }}
               </div>
               <div class="ml-auto">
@@ -73,12 +75,12 @@
     </div>
     <div class="d-none d-lg-block" style="width: 80%;">
       <div class="d-flex justify-content-between" style="width: 92%; margin-left: 3%;">
-        <a class="ab m-0" href = ""><strong>Compra por Industria</strong></a>
+        <a class="ab m-0" href = "compra-industria"><strong>Compra por Industria</strong></a>
         <a class="ab m-0" href = ""><strong><i class="fa fa-tag" aria-hidden="true" style = "transform: scaleX(-1);"></i>&nbsp;&nbsp;Ofertas</strong></a>
         <a class="ab m-0" href = ""><strong>Marcas Exclusivas</strong></a>
         <a class="ab m-0" href = ""><strong>Recién llegados</strong></a>
         <a class="ab m-0" href = ""><strong>Servicio técnico</strong></a>
-        <a class="ab m-0" href = ""><strong>Diseño de cocinas</strong></a>
+        <a class="ab m-0" href = "diseno-cocinas"><strong>Diseño de cocinas</strong></a>
       </div>
     </div>
   </div>

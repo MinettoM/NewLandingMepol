@@ -19,6 +19,7 @@ import { MarcasExclusivasComponent } from 'src/app/pages/marcas-exclusivas/marca
 import { RecienLlegadosComponent } from 'src/app/pages/recien-llegados/recien-llegados.component';
 import { ServicioTecnicoComponent } from 'src/app/pages/servicio-tecnico/servicio-tecnico.component';
 import { DisenoCocinasComponent } from 'src/app/pages/diseno-cocinas/diseno-cocinas.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { DisenoCocinasComponent } from 'src/app/pages/diseno-cocinas/diseno-coci
     MarcasExclusivasComponent,
     RecienLlegadosComponent,
     ServicioTecnicoComponent,
-    DisenoCocinasComponent
+    DisenoCocinasComponent,
+    MainComponent
   ],
   imports: [
     AppRoutingModule,
