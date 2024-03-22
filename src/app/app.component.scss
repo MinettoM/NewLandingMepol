@@ -173,10 +173,10 @@ $naranja: rgba(241, 147, 35, 1)!important;
   }
   .card-container {
     display: flex;
-    gap: 3vw; /* Espacio entre las tarjetas */
+    gap: 2vw; /* Espacio entre las tarjetas */
   }
   .card {
-    width: 19vw;
+    width: 19.8vw;
     padding: 20px;
     border: 1px solid rgba(244, 244, 244, 1);
     border-radius: 5px;
@@ -192,7 +192,11 @@ $naranja: rgba(241, 147, 35, 1)!important;
     text-align: center;
     background-color: rgba(244, 244, 244, 1);
   }
-
+  .card-blog {
+    width: 19.8vw;
+    padding: 20px;
+    text-align: center;
+  }
   .product-image {
     width: 100%;
     height: auto;
@@ -202,6 +206,11 @@ $naranja: rgba(241, 147, 35, 1)!important;
     font-weight: bold;
     font-size: 1.5vw;
     color: $azul;
+  }
+  .blog-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
   }
   .button-container {
     position: absolute;
@@ -228,3 +237,41 @@ $naranja: rgba(241, 147, 35, 1)!important;
     background-color: rgba(0, 0, 0, 0.1); /* Color de fondo cuando se pasa el ratón sobre el botón */
     color: #292929;
   }
+
+  .blog{
+    text-align: left;
+    font-size: 1vw;
+  }
+
+  .blog{
+    text-align: left;
+    font-size: 1vw;
+  }
+  .scrolling-banner {
+    width: 98%; /* Ajusta el tamaño del contenedor */
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    overflow: hidden; /* Evita que la imagen se ajuste al tamaño del contenedor */
+    position: relative; /* Posición relativa para los elementos hijos */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); /* Aplica un degradado a los bordes de la imagen para difuminarlos */
+}
+  
+  .scrolling-image {
+    animation: scroll 20s linear infinite; /* Define la animación */
+
+  }
+
+  
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Comienza la imagen desde la posición inicial */
+    }
+    100% {
+      transform: translateX(-100%); /* Desplaza la imagen al final */
+    }
+  }
+  
