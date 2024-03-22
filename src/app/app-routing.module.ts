@@ -7,7 +7,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  }
+  },
+  {
+    path: 'compra-industria',
+    component: CompraIndustriaComponent
+  },
 ];
 
 @NgModule({
