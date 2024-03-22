@@ -1,12 +1,12 @@
-$azul: rgba(10, 82, 144, 1)!important;
-$naranja: rgba(241, 147, 35, 1)!important;
+$azul: rgba(10, 82, 144, 1) !important;
+$naranja: rgba(241, 147, 35, 1) !important;
 
-.header1{
+.header1 {
     text-align: right;
     height: 35px;
 }
 
-.h-text{
+.h-text {
     font-size: 18px;
     font-weight: bold;
     margin-top: auto;
@@ -15,21 +15,21 @@ $naranja: rgba(241, 147, 35, 1)!important;
     color: rgb(28, 45, 121);
 }
 
-.logo{
+.logo {
     height: 25%;
     margin-bottom: 30px;
     margin-top: -20px;
 }
 
-.t2{
+.t2 {
     font-size: 0.94vw;
 }
 
-.text-uppercase{
+.text-uppercase {
     font-size: 1.15vw;
 }
 
-.icons{
+.icons {
     color: rgb(41, 53, 92);
     font-size: 28px;
 }
@@ -39,13 +39,13 @@ $naranja: rgba(241, 147, 35, 1)!important;
     background-color: rgba(244, 244, 244, 1)
 }
 
-.input-group-append{
+.input-group-append {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 6px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -54,18 +54,18 @@ a{
     width: 12vw;
     border-radius: 15px;
     padding: 10px 20px;
-    margin: 7px; 
+    margin: 7px;
     cursor: pointer;
 }
 
 .button.centro-de-ayuda {
-    background-color: $naranja; 
+    background-color: $naranja;
     border: 2px solid $naranja;
     font-size: 1vw;
     color: white;
 }
 
-.btn{
+.btn {
     font-size: 1vw;
 }
 
