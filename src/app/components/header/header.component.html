@@ -6,51 +6,51 @@
           </div>
       </div>-->
       <div class="header1">
-        <div class="d-inline-flex" style = "margin-top: 5px">
-          <i class="fas fa-info-circle fa-x icons" ></i>
+        <div class="d-inline-flex">
+          <i class="fas fa-info-circle fa-x icons" style = "margin-top: auto; margin-bottom: auto;"></i>
           <p class="h-text" style = "margin-left: 20px;">ZONA DOCUMENTOS</p>
           <p class="h-text">SERVICIOS</p>
           <p class="h-text">CATÁLOGOS</p>
         </div>
       </div>
   </div>
-  <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+  <div class="row align-items-center bg-light py-3 d-none d-lg-flex" style = "gap: 0.35vw; height: 7.5vw;">
     <div class="col-lg-2">
-      <img src="assets/img/logo.png" alt="Logo" style = "height: 80%; width: 80%;">
+      <img src="assets/img/logo.png" alt="Logo" style = "height: 80%; width: 80%; margin-left: 1vw;">
     </div>
       <div class="col-lg-4 col-6 text-left">
         <form action="">
-            <div class="input-group rounded-pill border-0">
-                <input type="text" class="form-control border-0 bg-secondary" style = "margin-left: 10px; border-radius: 50px;">
+            <div class="input-group rounded-pill border-0" style = "height: 3.5vw;">
+                <input type="text" class="form-control border-0 bg-secondary" style = "margin-left: 1.25vw; border-radius: 2.75vw;">
                 <div class="input-group-append">
-                  <button class="btn btn-primary btn-lg rounded-circle" style="width: 50px; height: 50px; padding: 0; background-color: rgba(241, 147, 35, 1)" type="submit">
-                    <i class="fa fa-search icons" style="line-height: 50px; color: white"></i>
+                  <button class="btn btn-primary btn-lg rounded-circle" style="width: 2.75vw; height: 2.75vw; padding: 0; background-color: rgba(241, 147, 35, 1)" type="submit">
+                    <i class="fa fa-search icons" style="line-height: 2.75vw; color: white; font-size: 1.5vw;"></i>
                 </button>
                 </div>
             </div>
         </form>
       </div>
       <div class="col-5 text-right d-flex align-items-center" style = "margin-left: 5%; gap: 2vw">
-        <div class = "col-lg-4 d-flex align-items-center">
+        <div class = "col-lg-4 d-flex align-items-center options">
           <i class="fa fa-map-marker-alt icons2"></i>
-          <p class="t-objetos mt-3 ml-3" style = "width: 5vw;">Seguimiento de Compra</p>
+          <p class="t-objetos mt-3" style = "width: 5.5vw; font-size: 1.1vw; margin-left: 1vw;">Seguimiento de Compra</p>
         </div>
-        <div class = " col-lg-4 d-flex align-items-center">
+        <div class = "col-lg-4 d-flex align-items-center options">
           <i class="fa fa-user icons2"></i>
-          <p class="t-objetos mt-3 ml-3" style = "width: 7vw;">Iniciar Sesión/ Registrarse</p>
+          <p class="t-objetos mt-3" style = "width: 7vw; font-size: 1.1vw; margin-left: 1vw;">Iniciar Sesión/ Registrarse</p>
         </div>
-        <div class = " col-lg-4 d-flex align-items-center">
+        <div class = "d-flex align-items-center options">
           <i class="fa fa-shopping-cart icons2"></i>
-          <p class="t-objetos mt-3 ml-3">Mi Carrito</p>
+          <p class="t-objetos" style = "font-size: 1.1vw; margin-left: 1vw; margin-top: 1vw;">Mi Carrito</p>
         </div>
       </div>
   </div>
 </div>
 <div class="container-fluid-2" style="box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.18);">
-  <div class="d-flex px-xl-5 align-items-center">
+  <div class="d-flex px-xl-5 align-items-center" style = "height: 3vw;">
     <div class="d-none d-lg-block" style="width: 20%;">
       <div class="dropdown" style="margin-left: 10%; margin-right: -50px; width: 90%;">
-        <button class="btn menu w-100 border-0" style="height: 50px;" type="button" (click)="toggleMenu()">
+        <button class="btn menu w-100 border-0" style="height: 3vw;" type="button" (click)="toggleMenu()">
           <h5 class="text-white m-0 d-flex align-items-center">
             <i class="fa fa-bars" style="margin-left: 2%; margin-right: 5%;"></i>
             <strong>Todas las categorías</strong>
@@ -59,12 +59,12 @@
         <div class="dropdown-menu custom-dropdown" [ngClass]="{ 'show': isMenuVisible, 'fade-in': isMenuVisible }">
           <a class="dropdown-item" href="#" *ngFor="let opcion of opciones">
             <div class="d-flex justify-content-between align-items-center">
-              <div>
-                <i class="fa {{ opcion.icono }} mr-1" style="margin-left: 20px; margin-right: 20px;"></i>
+              <div style = "font-size: 0.9vw;">
+                <i class="fa {{ opcion.icono }} mr-1" style = "margin-left: 0.5vw;"></i>
                 {{ opcion.nombre }}
               </div>
               <div class="ml-auto">
-                <i class="fa fa-arrow-right" style="margin-right: 20px;"></i>
+                <i class="fa fa-arrow-right" style="font-size: 0.9vw;"></i>
               </div>
             </div>
           </a>
@@ -82,5 +82,5 @@
       </div>
     </div>
   </div>
-  <div class="orange-rectangle" style = "font-size: 10px; border-top: 1px solid rgb(230, 230, 230);">&nbsp;</div>
+  <div class="orange-rectangle" style = "font-size: 0.5vw; border-top: 1px solid rgb(230, 230, 230);">&nbsp;</div>
 </div>

@@ -9,6 +9,8 @@ $naranja: rgba(241, 147, 35, 1)!important;
 .dinero {
   color: red;
   font-weight: bold;
+  font-size: 1.2vw;
+  margin-bottom: 0.2vw;
 }
 
 .selected {
@@ -69,7 +71,7 @@ $naranja: rgba(241, 147, 35, 1)!important;
   }
 
   .carousel-control-prev {
-    transform: translateX(-25%); 
+    transform: translateX(-2vw); 
     height: 60%;
     width: 100px;
     margin-top: auto; 
@@ -77,7 +79,7 @@ $naranja: rgba(241, 147, 35, 1)!important;
   }
   
   .carousel-control-next {
-    transform: translateX(25%); 
+    transform: translateX(2vw); 
     height: 60%; 
     width: 100px;
     margin-top: auto; 
@@ -162,11 +164,11 @@ $naranja: rgba(241, 147, 35, 1)!important;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 30vw;
   }
   .card-container-rounded {
     display: flex;
-    gap: 10vw; /* Espacio entre las tarjetas */
+    gap: 8vw; /* Espacio entre las tarjetas */
     margin-top: 0px;
   }
   .card-container {
@@ -174,7 +176,7 @@ $naranja: rgba(241, 147, 35, 1)!important;
     gap: 3vw; /* Espacio entre las tarjetas */
   }
   .card {
-    width: 360px;
+    width: 19vw;
     padding: 20px;
     border: 1px solid rgba(244, 244, 244, 1);
     border-radius: 5px;
@@ -182,8 +184,8 @@ $naranja: rgba(241, 147, 35, 1)!important;
     background-color: rgba(244, 244, 244, 1);
   }
   .card-rounded {
-    width: 180px;
-    height: 180px;
+    width: 11vw;
+    height: 11vw;
     padding: 20px;
     border: 1px solid rgba(244, 244, 244, 1);
     border-radius: 100%;
@@ -198,7 +200,7 @@ $naranja: rgba(241, 147, 35, 1)!important;
   }
   .product-name {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5vw;
     color: $azul;
   }
   .button-container {
@@ -206,6 +208,7 @@ $naranja: rgba(241, 147, 35, 1)!important;
     bottom: 0;
     left: 0;
     width: 100%;
+    font-size: 1.5vw;
     background-color: rgba(219, 215, 215, 1);
   }
   
@@ -214,7 +217,7 @@ $naranja: rgba(241, 147, 35, 1)!important;
     padding: 10px 0; /* Espaciado del botón */
     background-color: transparent; /* Fondo transparente */
     border: none;
-    font-size: 25px;
+    font-size: 1.5vw;
     font-weight: bold;
     color:#3f3f3f;
     cursor: pointer;

@@ -7,15 +7,15 @@ $naranja: rgba(241, 147, 35, 1)!important;
 
 .header1{
     text-align: right;
-    height: 35px;
+    height: 2vw;
 }
 
 .h-text{
-    font-size: 18px;
+    font-size: 1.1vw!important;
     font-weight: bold;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 45px;
+    margin-top: 0.25vw;
+    margin-bottom: 0.25vw;
+    margin-right: 2.75vw;
     color: rgb(28, 45, 121);
 }
 
@@ -32,19 +32,21 @@ $naranja: rgba(241, 147, 35, 1)!important;
 
 .icons2{
   color: $azul;
-  font-size: 40px;
+  font-size: 2.3vw;
 }
 
 .input-group {
-    height: 60px;
+    height: 3vw;
     background-color: rgba(244, 244, 244, 1)
 }
 
 .input-group-append{
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 6px;
+    margin-right: 0.3vw;
 }
+
+
 
 .custom-dropdown {
     border-radius: 2px; 
@@ -103,6 +105,7 @@ $naranja: rgba(241, 147, 35, 1)!important;
 
   .menu {
     background-color: $azul;
+    width: 10vw;
     transition: background-color 0.3s ease; // Transición suave de 0.3 segundos para el color de fondo
   }
   
@@ -224,4 +227,8 @@ $naranja: rgba(241, 147, 35, 1)!important;
 
   .ab:hover::before {
       width: 100%;
-    }
+  }
+  
+  .options:hover {
+    cursor: pointer;
+  }
