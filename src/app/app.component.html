@@ -1,9 +1,8 @@
 <!-- HEADER -->
-
 <app-header></app-header>
 
 <!-- CARRUSEL -->
-
+<ul>
 <div class="container-fluid">
   <div class="row px-xl-5">
       <div style = "margin-top: 25px;">
@@ -157,9 +156,9 @@
           <div class="card">
             <img src="assets/img/producto1.png" alt="Producto 1" class="product-image">
             <div class="button-container" style = "margin-bottom: -3vw;">
-              <button class="button">Producto 1
+              <li class = "nav-item"><button class="button" routerLink = "compra-industria">Producto 1
                 <p class="dinero">S/ XXXX.XX</p>
-              </button>
+              </button></li>
             </div>
           </div>
           <div class="card">
@@ -192,7 +191,7 @@
 
     
 </div>
-
+</ul>
 <!-- 3D MODEL -->
 
 <!--
@@ -204,4 +203,5 @@
 
 <app-footer></app-footer>
 
+<router-outlet></router-outlet>
 

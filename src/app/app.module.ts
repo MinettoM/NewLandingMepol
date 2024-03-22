@@ -3,10 +3,12 @@ import { NgtAmbientLightModule, NgtPointLightModule } from '@angular-three/core/
 import { NgtPrimitiveModule } from '@angular-three/core/primitive';
 import { NgtSobaLoaderModule } from '@angular-three/soba/loaders';
 import { NgtSobaOrbitControlsModule } from '@angular-three/soba/controls';
+import { RouterModule } from '@angular/router';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductPreviewComponent } from 'src/app/components/product-preview/product-preview.component';
 import { HeaderComponent } from 'src/app/components/header/header.component';
@@ -32,6 +34,8 @@ import { DisenoCocinasComponent } from 'src/app/pages/diseno-cocinas/diseno-coci
     DisenoCocinasComponent
   ],
   imports: [
+    AppRoutingModule,
+    RouterModule.forRoot([]),
     BrowserModule,
     NgtCoreModule,
     NgtSobaLoaderModule,
