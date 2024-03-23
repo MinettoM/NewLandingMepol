@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import 'aframe';
 
 @Component({
   selector: 'app-compra-industria',

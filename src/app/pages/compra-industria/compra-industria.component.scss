@@ -1,126 +1,15 @@
 $azul: rgba(10, 82, 144, 1) !important;
 $naranja: rgba(241, 147, 35, 1) !important;
 
-.container-fluid-2 {
-    background-color: $azul;
-    color: white !important;
-}
-
-.container-fluid-3 {
-    background-color: $naranja;
-}
-
-.menu {
-    background-color: $azul;
-    transition: background-color 0.3s ease; // Transición suave de 0.3 segundos para el color de fondo
-}
-
-.menu:hover {
-    background-color: $naranja;
-}
-
-.menu.clicked {
-    background-color: $naranja;
-}
-
-.text-white {
-    font-size: 1.1vw; // Tamaño del texto ajustado al ancho de la ventana
-}
-
-@media (max-width: 768px) {
-    .text-white {
-        font-size: 3vw; // Cambia el tamaño del texto para pantallas más pequeñas
-    }
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vw;
-}
-
-.card-container-rounded {
-    display: flex;
-    gap: 8vw;
-    /* Espacio entre las tarjetas */
-    margin-top: 0px;
-}
-
-.card-container {
-    display: flex;
-    gap: 2vw;
-    /* Espacio entre las tarjetas */
-}
-
-.card {
-    width: 19.8vw;
-    padding: 20px;
-    border: 1px solid rgba(244, 244, 244, 1);
-    border-radius: 5px;
-    text-align: center;
-    background-color: rgba(244, 244, 244, 1);
-}
-
-.card-rounded {
-    width: 11vw;
-    height: 11vw;
-    padding: 20px;
-    border: 1px solid rgba(244, 244, 244, 1);
-    border-radius: 100%;
-    text-align: center;
-    background-color: rgba(244, 244, 244, 1);
-}
-
-.card-blog {
-    width: 19.8vw;
-    padding: 20px;
-    text-align: center;
-}
-
-.product-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 35px;
-}
-
-.product-name {
-    font-weight: bold;
-    font-size: 1.5vw;
-    color: $azul;
-}
-
-.blog-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.button-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    font-size: 1.5vw;
-    background-color: rgba(219, 215, 215, 1);
-}
-
-.button {
-    width: 100%;
-    padding: 10px 0;
-    /* Espaciado del botón */
-    background-color: transparent;
-    /* Fondo transparente */
-    border: none;
-    font-size: 1.5vw;
-    font-weight: bold;
-    color: #3f3f3f;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.button:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    /* Color de fondo cuando se pasa el ratón sobre el botón */
-    color: #292929;
-}
+:host {
+    display: block; // Asegura que el componente sea un bloque
+    position: relative; // Establece una posición relativa para poder posicionar correctamente el video
+    width: 100%; // Ajusta el ancho del componente al 100%
+    height: auto; // Ajusta la altura automáticamente (puedes ajustarlo según tus necesidades)
+  }
+  
+  video {
+    width: 100%; // Ajusta el ancho del video al 100% del contenedor
+    height: auto; // Ajusta la altura automáticamente (proporcional al ancho)
+    display: block; // Asegura que el video sea un bloque
+  }
