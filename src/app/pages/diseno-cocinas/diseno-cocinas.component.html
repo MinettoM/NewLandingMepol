@@ -119,8 +119,16 @@
                           </button>
                       </div>
                   </div>
-                  <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i> Add To
-                      Cart</button>
+                  <div class="button2">
+                    <div class="button2-wrapper">
+                      <div class="text">Añadir</div>
+                        <span class="icon">
+                          <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                    </svg>
+                        </span>
+                      </div>
+                    </div>
               </div>
               <div class="d-flex pt-2">
                   <strong class="text-dark mr-2">Share on:</strong>
@@ -216,15 +224,30 @@
                           </div>
                           <div class="col-md-6">
                               <h4 class="mb-4">Llena tu Reseña</h4>
-                              <small>Tu direcciónd de e-mail no será publicado*</small>
+                              <small>Tu dirección de e-mail no será publicada. </small>
                               <div class="d-flex my-3">
-                                  <p class="mb-0 mr-2">Tu puntaje * :</p>
-                                  <div class="text-primary">
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
+                                  <p class="mb-0 mt-1 mr-3">Tu puntaje:</p>
+                                  <div class="rating">
+                                    <input type="radio" id="star-1" name="star-radio" value="star-1">
+                                    <label for="star-1">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                    </label>
+                                    <input type="radio" id="star-2" name="star-radio" value="star-1">
+                                    <label for="star-2">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                    </label>
+                                    <input type="radio" id="star-3" name="star-radio" value="star-1">
+                                    <label for="star-3">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                    </label>
+                                    <input type="radio" id="star-4" name="star-radio" value="star-1">
+                                    <label for="star-4">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                    </label>
+                                    <input type="radio" id="star-5" name="star-radio" value="star-1">
+                                    <label for="star-5">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                    </label>
                                   </div>
                               </div>
                               <form>
@@ -241,7 +264,14 @@
                                       <input type="email" class="form-control" id="email">
                                   </div>
                                   <div class="form-group mb-0 mt-2">
-                                      <input type="submit" value="Leave Your Review" class="btn btn-primary px-3" style = "border-radius: 1vw;">
+                                    <button class = "enviar">
+                                        <span class="circle1"></span>
+                                        <span class="circle2"></span>
+                                        <span class="circle3"></span>
+                                        <span class="circle4"></span>
+                                        <span class="circle5"></span>
+                                        <span class="text">Submit</span>
+                                    </button>
                                   </div>
                               </form>
                           </div>
@@ -261,38 +291,38 @@
       <h1 class = "titulo">Productos Relacionados</h1>
       <div class="container mt-4" style = "margin-bottom: 6vw;">
         <div class="card-container-2" style = "gap: 2vw!important;">
-          <div class="card" style = "width: 21vw;">
-            <img src="assets/img/producto1.png" alt="Producto 1" class="product-image">
-            <div class="button-container" style = "margin-bottom: -3vw;">
-              <button class="button" routerLink = "compra-industria">Producto 1
-                <p class="dinero">S/ XXXX.XX</p>
-              </button>
-            </div>
-          </div>
-          <div class="card" style = "width: 21vw;">
-            <img src="assets/img/producto1.png" alt="Producto 2" class="product-image">
-            <div class="button-container" style = "margin-bottom: -3vw;">
-              <button class="button">Producto 2
-                <p class="dinero">S/ XXXX.XX</p>
-              </button>
-            </div>
-          </div>
-          <div class="card" style = "width: 21vw;">
-            <img src="assets/img/producto1.png" alt="Producto 3" class="product-image">
-            <div class="button-container" style = "margin-bottom: -3vw;">
-              <button class="button">Producto 3
-                <p class="dinero">S/ XXXX.XX</p>
-              </button>
-            </div>
-          </div>
-          <div class="card" style = "width: 21.5vw;">
-            <img src="assets/img/producto1.png" alt="Producto 4" class="product-image">
-            <div class="button-container" style = "margin-bottom: -3vw;">
-              <button class="button">Producto 4
-                <p class="dinero">S/ XXXX.XX</p>
-              </button>
-            </div>
-          </div>
+            <div class="card" style = "width: 21.5vw;">
+                <img src="assets/img/vendidos1.png" alt="mantenedores" class="product-image">
+                <div class="button-container" style = "margin-bottom: -2vw;">
+                  <button class="button" routerLink = "diseno-cocinas">Mantenedores
+                    <p class="dinero">S/ XXXX.XX</p>
+                  </button>
+                </div>
+              </div>
+              <div class="card" style = "width: 21.5vw;">
+                <img src="assets/img/vendidos2.png" alt="lavavajillas" class="product-image">
+                <div class="button-container" style = "margin-bottom: -2vw;">
+                  <button class="button">Lavavajillas
+                    <p class="dinero">S/ XXXX.XX</p>
+                  </button>
+                </div>
+              </div>
+              <div class="card" style = "width: 21.5vw;">
+                <img src="assets/img/vendidos3.png" alt="sartenes" class="product-image">
+                <div class="button-container" style = "margin-bottom: -2vw;">
+                  <button class="button">Sartenes
+                    <p class="dinero">S/ XXXX.XX</p>
+                  </button>
+                </div>
+              </div>
+              <div class="card" style = "width: 21.5vw;">
+                <img src="assets/img/vendidos4.png" alt="hornos" class="product-image">
+                <div class="button-container" style = "margin-bottom: -2vw;">
+                  <button class="button">Hornos
+                    <p class="dinero">S/ XXXX.XX</p>
+                  </button>
+                </div>
+              </div>
         </div>
       </div>
     </div> 
