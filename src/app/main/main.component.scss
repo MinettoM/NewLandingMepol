@@ -7,10 +7,14 @@ $naranja: rgba(241, 147, 35, 1)!important;
 }
 
 .dinero {
-  color: red;
+  color: white;
+  background-color: $azul;
   font-weight: bold;
   font-size: 1.2vw;
-  margin-bottom: 0.2vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  margin-top: 0.5vw;
+  margin-bottom: -1vw;
 }
 
 .selected {
@@ -92,6 +96,10 @@ $naranja: rgba(241, 147, 35, 1)!important;
 
   .active{
     background-color: $naranja;
+  }
+
+  .active2{
+    background-color: white!important;
   }
 
   .custom-dropdown .dropdown-item {
@@ -177,7 +185,7 @@ $naranja: rgba(241, 147, 35, 1)!important;
   }
   .card {
     width: 19.8vw;
-    padding: 20px;
+    padding-bottom: 1vw;
     border: 1px solid rgba(244, 244, 244, 1);
     border-radius: 5px;
     text-align: center;
@@ -196,11 +204,12 @@ $naranja: rgba(241, 147, 35, 1)!important;
     width: 19.8vw;
     padding: 20px;
     text-align: center;
+    cursor: pointer;
   }
   .product-image {
     width: 100%;
     height: auto;
-    margin-bottom: 35px;
+    margin-bottom: 2.4vw;
   }
   .product-name {
     font-weight: bold;
@@ -208,10 +217,13 @@ $naranja: rgba(241, 147, 35, 1)!important;
     color: $azul;
   }
   .blog-image {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 10vw;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   .button-container {
     position: absolute;
     bottom: 0;
@@ -219,24 +231,24 @@ $naranja: rgba(241, 147, 35, 1)!important;
     width: 100%;
     font-size: 1.5vw;
     background-color: rgba(219, 215, 215, 1);
+    transition: filter 0.3s;
+  }
+
+  .button-container:hover{
+  filter: brightness(80%);
+
   }
   
   .button {
     width: 100%;
     padding: 10px 0; /* Espaciado del botón */
-    background-color: transparent; /* Fondo transparente */
     border: none;
     font-size: 1.5vw;
     font-weight: bold;
     color:#3f3f3f;
     cursor: pointer;
-    transition: background-color 0.3s;
   }
-  
-  .button:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo cuando se pasa el ratón sobre el botón */
-    color: #292929;
-  }
+
 
   .blog{
     text-align: left;
@@ -260,7 +272,7 @@ $naranja: rgba(241, 147, 35, 1)!important;
 }
   
   .scrolling-image {
-    animation: scroll 20s linear infinite; /* Define la animación */
+    animation: scroll 30s linear infinite; /* Define la animación */
 
   }
 

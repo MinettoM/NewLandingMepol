@@ -1,0 +1,111 @@
+$azul: rgba(10, 82, 144, 1)!important;
+$naranja: rgba(241, 147, 35, 1)!important;
+
+.titulo {
+  font-weight: bold;
+  color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 0px;
+  }
+  .card-container {
+    border-radius: 15px;
+    border: 1px solid rgb(246, 246, 246);
+    box-shadow: 0px 6px 6px rgba(0,0,0,0.2);
+    height: 31vw;
+  }
+  .card-container-2{
+    display: flex;
+    height: 25vw;
+  }
+  .card {
+    width: 19.8vw;
+    padding: 20px;
+    border: 1px solid rgba(244, 244, 244, 1);
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(244, 244, 244, 1);
+  }
+
+  .carousel-container {
+    margin: 0 auto; /* Esto centra horizontalmente el contenedor */
+    height: 30vw;
+    width: 30vw;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.5vw;
+    background-color: rgba(219, 215, 215, 1);
+  }
+  
+  .button {
+    width: 100%;
+    padding: 10px 0; /* Espaciado del botón */
+    background-color: transparent; /* Fondo transparente */
+    border: none;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color:#3f3f3f;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo cuando se pasa el ratón sobre el botón */
+    color: #292929;
+  }
+
+  .dinero {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2vw;
+    margin-bottom: 0.2vw;
+  }
+
+  .image-card {
+    display: flex;
+    flex-direction: row;
+    height: 40vw;
+  
+    .thumbnails {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-right: 10px;
+  
+      img {
+        width: 5vw;
+        height: auto;
+        margin-bottom: 5px;
+        cursor: pointer;
+        opacity: 0.7;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  
+    .full-image {
+      img {
+        margin-top: 1vw;
+        max-width: 28vw;
+        height: auto;
+        margin-left: 1.5vw;
+      }
+    }
+  }
+
+  .miniImg{
+    height: 2vw;
+  }
+  

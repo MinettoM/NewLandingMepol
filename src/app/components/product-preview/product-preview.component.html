@@ -1,11 +1,11 @@
 <ngt-canvas [shadows]="true" [scene]="{ background: 'white' | color }">
   <ngt-ambient-light [intensity]="0.8"></ngt-ambient-light>
-  <ngt-point-light [intensity]="0.3" [position]="[0, 3, 0]"></ngt-point-light> <!-- Luz arriba -->
-  <ngt-point-light [intensity]="0.3" [position]="[0, -3, 0]"></ngt-point-light> <!-- Luz abajo -->
-  <ngt-point-light [intensity]="0.3" [position]="[3, 0, 0]"></ngt-point-light> <!-- Luz derecha -->
-  <ngt-point-light [intensity]="0.3" [position]="[-3, 0, 0]"></ngt-point-light> <!-- Luz izquierda -->
-  <ngt-point-light [intensity]="0.3" [position]="[0, 0, 3]"></ngt-point-light> <!-- Luz delantera -->
-  <ngt-point-light [intensity]="0.3" [position]="[0, 0, -3]"></ngt-point-light> <!-- Luz trasera -->
+  <ngt-point-light [intensity]="0.8" [position]="[0, 3, 0]"></ngt-point-light> <!-- Luz arriba -->
+  <ngt-point-light [intensity]="0.8" [position]="[0, -3, 0]"></ngt-point-light> <!-- Luz abajo -->
+  <ngt-point-light [intensity]="0.8" [position]="[3, 0, 0]"></ngt-point-light> <!-- Luz derecha -->
+  <ngt-point-light [intensity]="0.8" [position]="[-3, 0, 0]"></ngt-point-light> <!-- Luz izquierda -->
+  <ngt-point-light [intensity]="0.8" [position]="[0, 0, 3]"></ngt-point-light> <!-- Luz delantera -->
+  <ngt-point-light [intensity]="0.8" [position]="[0, 0, -3]"></ngt-point-light> <!-- Luz trasera -->
   <ngt-primitive
     *ngIf="freidora$ | async as freidora"
     [object]="freidora.scene"

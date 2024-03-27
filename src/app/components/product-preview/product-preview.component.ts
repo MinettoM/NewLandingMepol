@@ -37,7 +37,7 @@ export class ProductPreviewComponent implements OnInit {
     const orbitControls = controls.controls;
     orbitControls.enableZoom = true;
     orbitControls.autoRotate = true;
-    orbitControls.autoRotateSpeed = 0;
+    orbitControls.autoRotateSpeed = 5;
     const camera = orbitControls.object as PerspectiveCamera;
     camera.zoom = 5;
     camera.position.setY(2);
