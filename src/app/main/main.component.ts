@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -32,4 +32,23 @@ export class MainComponent {
     { nombre: 'Mochilas Delivery', icono: 'fa-briefcase' },
     { nombre: 'Procesadores de Alimentos', icono: 'fa-blender' }
   ];
+
+  // Al hacer scroll, mostrar u ocultar el botón de volver arriba
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const backToTopBtn = document.getElementById("back-to-top-btn");
+    if (backToTopBtn) {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    }
+  }
+
+  // Volver al principio de la página al hacer clic en el botón
+  scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 }

@@ -2,7 +2,7 @@
 <div class="container-fluid">
   <div class="row px-xl-5">
       <div style = "margin-top: 1vw;">
-        <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0" data-ride="carousel">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
             <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#header-carousel" data-slide-to="1"></li>
@@ -38,7 +38,7 @@
       <!-- 4 CARTELES -->
 
       <div class="container">
-        <div class="card-container" style = "margin-top: -7vw">
+        <div class="card-container" style = "margin-top: -8vw">
           <div class="card">
             <img src="assets/img/productoA.png" alt="Producto 1" class="product-image">
             <div class="button-container">
@@ -194,7 +194,9 @@
 
       <!-- BLOG -->
 
-      <h1 class = "titulo" style = "margin-top: 2vw; margin-bottom: 1vw;" routerLink = "marcas-exclusivas">Blog</h1>
+      <a href = "marcas-exclusivas" style = "text-decoration: none;">
+        <h1 class = "titulo" style = "margin-top: 2vw; margin-bottom: 1vw; cursor: pointer;">Blog</h1>
+      </a>
       <div id="header-carousel-2" class="carousel slide carousel-fade" data-ride="carousel" style = "margin-bottom: 4vw;">
         <div class="carousel-inner d-flex" style="width: 86vw; margin-left: auto!important; margin-right: auto!important;">
           <div class="carousel-item active" style = "background-color: white!important;">
@@ -234,6 +236,14 @@
           <div class="carousel-item active2">
             <div class="d-flex justify-content-around">
               <div class="card-blog" style = "width: 21.5vw;">
+                <img src="assets/img/blog3.png" alt="Producto 3" class="blog-image">
+                <div class="blog" style = "margin-bottom: -3vw;">
+                  <p style = "color: gray; font-size: 0.8vw;">2024-02-21</p>
+                  <p style = "color: rgb(38, 48, 109); font-size: 1vw;">RATIONAL USA Expands Partnership with
+                  Tri-State Marketing Rep Group.</p>
+                </div>
+              </div>
+              <div class="card-blog" style = "width: 21.5vw;">
                 <img src="assets/img/blog1.png" alt="Producto 1" class="blog-image">
                 <div class="blog" style = "margin-bottom: -1vw;">
                   <p style = "color: gray; font-size: 0.8vw;">2024-02-27</p>
@@ -264,6 +274,13 @@
     </div>   
   </div> 
 </div>
+
+<!-- BOTÓN VOLVER ARRIBA-->
+
+<button id="back-to-top-btn" (click)="scrollToTop()" title="Volver arriba">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
 
 <!-- 3D MODEL -->
 

@@ -116,10 +116,6 @@ $naranja: rgba(241, 147, 35, 1)!important;
   .menu:hover {
     background-color: $naranja;
   }
-  
-  .menu.clicked {
-    background-color: $naranja;
-  }
 
   .text-white {
     font-size: 1.1vw; // Tamaño del texto ajustado al ancho de la ventana
@@ -224,7 +220,7 @@ $naranja: rgba(241, 147, 35, 1)!important;
       left: 0;
       color: $naranja!important; 
       width: 0;
-      height: 2px;
+      height: 1.5px;
       background-color: $naranja;
       transition: width 0.2s ease-in-out;
   }

@@ -287,3 +287,35 @@ $naranja: rgba(241, 147, 35, 1)!important;
     }
   }
   
+  #back-to-top-btn {
+    display: none; /* El botón estará oculto por defecto */
+    position: fixed;
+    bottom: 20px;
+    height: 3vw;
+    width: 3vw;
+    right: 20px;
+    background-color: $azul;
+    color: white;
+    text-align: center;
+    line-height: 3vw;
+    border-radius: 50%;
+    z-index: 1000;
+    animation: aparecer 0.7s ease-in-out;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.35));
+    cursor: pointer; /* Cambia el cursor cuando se pasa sobre el botón */
+}
+
+#back-to-top-btn:hover {
+    background-color: $naranja;
+}
+
+@keyframes aparecer {
+    0% {
+        transform: scale(0) rotate(0deg); /* Escalado a 0 y rotación de 0 grados */
+        opacity: 0; /* Inicialmente transparente */
+    }
+    100% {
+        transform: scale(1) rotate(360deg); /* Escalado a 1 y rotación completa */
+        opacity: 1; /* Opacidad completa */
+    }
+}
