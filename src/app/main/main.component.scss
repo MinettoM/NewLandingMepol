@@ -303,6 +303,7 @@ $naranja: rgba(241, 147, 35, 1)!important;
     animation: aparecer 0.7s ease-in-out;
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.35));
     cursor: pointer; /* Cambia el cursor cuando se pasa sobre el botón */
+    transition: background-color 0.15s;
 }
 
 #back-to-top-btn:hover {

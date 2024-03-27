@@ -54,7 +54,7 @@ a {
     width: 12vw;
     border-radius: 15px;
     padding: 10px 20px;
-    margin: 7px;
+    margin-bottom: 1.5vw;
     cursor: pointer;
 }
 
@@ -69,14 +69,17 @@ a {
 .btn {
     font-size: 1vw;
     color: white;
+    height: 3vw;
+    width: 3vw;
     border: 1px solid white;
     filter: brightness(65%);
     transition: filter 0.3s;
-    transition: transform 0.3s
+    transition: transform 0.3s;
 }
 
 .btn:hover{
     transform: translateY(-0.25vw);
+    border: 2px solid white;
     filter: brightness(100%);
     filter: drop-shadow(0px 2px 1px black)
 }
